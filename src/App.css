@@ -1,14 +1,20 @@
 .App {
   text-align: center;
+
+}
+body{
+  background-color: rgb(217, 248, 248);
 }
 
 .header{
   font-weight: 500;
-  font-size: larger;
+  font-size: 30px;
   border: 2px solid;
-  background-color: #c14646;
+  background-color: #f4a6a6;
   color:white;
+  height: 80px;
   text-align: center;
+  align-items: center;
 }
 .formHeader{
   margin-left: 12px;
@@ -28,10 +34,11 @@ margin-left: 12px;
   /* background-color: green; */
 }
 .contactsHeader{
-  font-size: medium;
+  font-size: 30px;
+  text-align: center;
   font-weight: 500;
   font-family:system-ui;
-  margin-left: 12px;
+  margin-left: -80px;
   margin-top: 20px;
 }
 
@@ -76,21 +83,22 @@ margin-right: 500px;
 }
 
 .task-table th {
-  background-color: #f2f2f2;
+  background-color: #f18c8c;
 }
 
-.task-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+.task-table tr {
+  background-color:#aef3ae;
 }
 
 .task-table tr:hover {
-  background-color: #ddd;
+  background-color: #c0c7c0;
 }
 
 .task-table th:last-child,
 .task-table td:last-child {
   text-align: center;
 }
+
 
 /* Add more styles as needed */
 
