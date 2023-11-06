@@ -2,37 +2,95 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  font-weight: 500;
+  font-size: larger;
+  border: 2px solid;
+  background-color: #c14646;
+  color:white;
+  text-align: center;
+}
+.formHeader{
+  margin-left: 12px;
+}
+.add-task{
+font-size: initial;
+font-weight: 500;
+font-family: fantasy;
+margin-left: 12px;
+
+}
+.btn{
+  border-color: cadetblue;
+  /* color: #8e0625; */
+  margin-top: 60px;
+  margin-bottom: 20px;
+  /* background-color: green; */
+}
+.contactsHeader{
+  font-size: medium;
+  font-weight: 500;
+  font-family:system-ui;
+  margin-left: 12px;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tasks{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-between;
+  border: 2px solid;
+  background-color: #fdeffd;
+  margin-bottom: 2px;
+  margin-left: 12px;
+  margin-right: 12px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.searchBar{
+display: inline-block;
+/* border: 2px solid; */
+margin-bottom: 20px;
+margin-left: 500px;
+margin-right: 500px;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outlined-required{
+  border-color: black;
 }
+
+/* App.css */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: #f2f2f2;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.task-table tr:hover {
+  background-color: #ddd;
+}
+
+.task-table th:last-child,
+.task-table td:last-child {
+  text-align: center;
+}
+
+/* Add more styles as needed */
+
