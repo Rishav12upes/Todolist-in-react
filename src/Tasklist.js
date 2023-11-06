@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './App.css'; // Make sure to import your CSS file
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
-import CheckBoxIcon from '@mui/icons-material/CheckBox';
 
 export default function Tasklist(props) {
   const { task, removeTask, editTask } = props;
@@ -15,13 +13,11 @@ export default function Tasklist(props) {
     filterTask();
   }, [filterKey]);
 
-console.log('$$$$$$$$$$$$$$$$$$$$$$$44',task);
   const handleOnChange = (event) => {
     setFilterKey(event.target.value);
   };
 
   const filterTask = () => {
-    console.log(task,'----------------------')
     
     let filterArray = (task||[]).filter((val) => val.title?.toLowerCase().includes(filterKey));
     setFilterResult(filterArray);
@@ -79,7 +75,7 @@ console.log('$$$$$$$$$$$$$$$$$$$$$$$44',task);
             <th>Title</th>
             <th>Description</th>
             <th>Actions</th>
-            <th>Status</th>
+            <th>Task Status</th>
           </tr>
         </thead>
         <tbody>{tasklist}</tbody>

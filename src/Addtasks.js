@@ -16,7 +16,6 @@ useEffect(() =>{
 },[editedtask])
 
   const handleAdd = () => {
-    console.log("**************",taskData);
     if (!taskData.title) {
       setTitleError(true);
       return;
